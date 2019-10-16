@@ -1,2 +1,2 @@
-# PIPG
+# PIPG 🎮
 Projektowanie i programowanie gier.
