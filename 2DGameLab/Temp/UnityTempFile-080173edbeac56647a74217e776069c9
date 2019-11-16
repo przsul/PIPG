@@ -276,6 +276,7 @@
 /define:ENABLE_UNITY_COLLECTIONS_CHECKS
 /define:ENABLE_BURST_AOT
 /define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
 /define:ENABLE_CUSTOM_RENDER_TEXTURE
 /define:ENABLE_DIRECTOR
 /define:ENABLE_LOCALIZATION
@@ -286,7 +287,10 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
+Assets\boundaries.cs
 Assets\CameraBackgroundColor.cs
 Assets\GameManager.cs
 Assets\LAB2Sprite_Script.cs
+Assets\moveBullet.cs
+Assets\stateczekBehaviour.cs
 Assets\task2_script.cs
