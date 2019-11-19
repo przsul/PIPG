@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - bulletPreFab: {fileID: 7819236389579340923, guid: 4ede569133b787048b548ad1dc39061c,
       type: 3}
+  - bulletSound: {fileID: 8300000, guid: 7526cd205fa8ae8449493befc55d4bab, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
