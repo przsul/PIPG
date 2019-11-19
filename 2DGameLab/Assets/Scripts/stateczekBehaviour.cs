@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class stateczekBehaviour : MonoBehaviour
 {
+    public static int lifes = 3;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,5 +41,21 @@ public class stateczekBehaviour : MonoBehaviour
             this.transform.position = position;
         }
 
+        if (lifes == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            GameObject lifeToDestory = GameObject.Find("life" + lifes);
+            lifes--;
+            Destroy(lifeToDestory);
+
+            transform.position = new Vector3(0, -7.56f, 0);
+        }
     }
 }

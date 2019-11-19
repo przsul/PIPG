@@ -8,6 +8,7 @@ public class moveBullet : MonoBehaviour
 
     public AudioClip explosion;
     AudioSource audioSource;
+    public static int hits = 0;
 
     float speed = 0.2f;
 
@@ -24,6 +25,7 @@ public class moveBullet : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        hits++;
         Destroy(col.gameObject);
         gameObject.SetActive(false);
         audioSource.PlayOneShot(explosion, 1f);
