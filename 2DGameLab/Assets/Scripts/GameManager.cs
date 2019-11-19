@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("PlayerX: " + playerX);
             Debug.Log("PlayerY: " + playerY);
             Instantiate(bulletPreFab, new Vector3(playerX, playerY + (playerBoundY*0.9f), 0), Quaternion.identity);
-            audioSource.PlayOneShot(bulletSound, 1f);
+            audioSource.PlayOneShot(bulletSound, 0.2f);
         }
     }
 }
